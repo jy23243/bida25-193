@@ -1,16 +1,40 @@
-body{
-  font-family: Arial;
-  text-align: cente;
+body {
+  font-family: Arial, sans-serif;
+ margin: 0;
   background-color: #f4f4f4;
 }
+header {
+ background-color: black;
+ color: white;
+ padding: 20px;
+ text-align: center;
+}
 nav {
-  margin: 15px;
+  background-color: #333;
+  padding: 10px
+  text-align: center;
 }
 nav a {
+  color: white;
   margin: 10px;
   text-decoration: none;
-  color:black;
+  font-weight: bold
 }
-h1 {
-  color: darkblue;
+nav a:hover {
+  color: gold;
+}
+main {
+  padding: 20px;
+}
+section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+footer{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
