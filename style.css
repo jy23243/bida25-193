@@ -1,22 +1,27 @@
 body {
+   margin: 0;
   font-family: Arial, sans-serif;
- margin: 0;
-  background-color: #f4f4f4;
+  background-color: #111
+  color: white;
 }
 header {
- background-color: black;
- color: white;
- padding: 20px;
- text-align: center;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
 }
 nav {
-  background-color: #333;
+  background-color: #1c1c1c;
   padding: 10px
   text-align: center;
 }
 nav a {
   color: white;
-  margin: 10px;
+  margin:0 15px;
   text-decoration: none;
   font-weight: bold
 }
@@ -24,17 +29,80 @@ nav a:hover {
   color: gold;
 }
 main {
+  max-width: 1000px;
+  margin: auto;
   padding: 20px;
 }
 section {
-  background: white;
-  margin: 20px;
+  background: #1c1c1c;
+  margin: 20px 0;
   padding: 20px;
   border-radius: 10px;
 }
+.hero {
+  background-color: black;
+  text-align: center;
+  padding: 60px 20px
+}
+.hero h2 {
+  font-size: 40px;
+}
+.hero p {
+  color: gold;
+}
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  color: black;
+  padding: 15px;
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+.card img{
+  width: 100%;
+  border-radius: 10px
+}
+.card:hover {
+  transform: scale(1.05);
+}
+form {
+  dispay: flex;
+  flex-direction: column;
+}
+input, textarea {
+  padding: 10px;
+  margin-top:5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  background-color: orange;
+}
 footer{
   background: black;
-  color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  margin-top: 20px
+}
+@media (max-width: 768px) {
+  nav a {
+    display:block;
+    margin: 10px 0;
+  }
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero h2 {
+    font-size: 29px;
+  }
 }
