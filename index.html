@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Jay Styles</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3,3/dist/css/bootstrap.min.css"rel="stylesheet">
 </head>
 <body>
 <header>
@@ -17,18 +18,50 @@
   <a href="contacts.html">Contact</a>
   <a href="feedback.html">Feedback</a>
 </nav>
-<main>
-  <section>
-    <h2>Welcome</h2>
-    <p>Luxury Fashion at affordable prices</p>
-  </section>
-  <section>
-    <h2>Featured Products</h2>
-    <p>Explore our latest streetwear collection</p>
+<main class="container my-5">
+  <section class="hero text-center p-5">
+    <h2>Luxury Streetwear</h2>
+    <p>Modern Fashion at affordable prices</p>
+    <button onclick="showMessage()">Shop Now</button>
+  <section class="mt-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600"class="card-img-top"alt="Street Hoodie">
+          <div class="card-body">
+            <h5 class="card-tittle">Street Hoodie</h5>
+            <p class="card-text">Premium urban hoodie</p>
+            <button>Buy now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600"class="card-img-top"alt="luxury t-shirt">
+          <div class="card-body">
+            <h5 class="card-tittle">luxury t-shirt</h5>
+            <p class="card-text">fashionable designer t-shirt</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600"class="card-img_top"alt="Sneakers">
+          <div class="card-body">
+            <h5 class="card-tittle">Sneakers</h5>
+            <p class="card-text">Morden luxury sneakers</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 <footer>
   <p>&copy; 2026 Jay Styles | All Rights Reserved</p>
 </footer>
+<script>funtion showMessage(){ arlert("welcome to Jay Styles!")}</script>
 </body>
 </html>
